@@ -1,0 +1,14 @@
+language: python
+python:
+    - 2.7
+    - 3.4
+
+install:
+    # install-requires dependencies
+    - pip install nose
+    - pip install pyflakes
+    - pip install --user --editable .
+
+script:
+    - nosetests
+    - pyflakes {{ cookiecutter.project_name }}
