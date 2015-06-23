@@ -8,7 +8,7 @@ Usage
 
 ```bash
 $ pip install cookiecutter
-$ cookiecutter https://github.com/hbristow/cookiecutter-cl
+$ cookiecutter https://github.com/hbristow/cookiecutter-py
 ```
 
 You'll be prompted to provide some basic information about your new project,
