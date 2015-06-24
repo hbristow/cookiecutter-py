@@ -6,9 +6,9 @@ python:
 install:
     # install-requires dependencies
     - pip install nose
-    - pip install pyflakes
+    - pip install pylint
     - pip install --user --editable .
 
 script:
     - nosetests
-    - pyflakes {{ cookiecutter.project_name }}
+    - pylint --disable=C,R,W,E1101,E0611 --reports=no {{ cookiecutter.project_name }}
